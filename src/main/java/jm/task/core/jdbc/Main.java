@@ -11,9 +11,10 @@ public class Main {
         userService.saveUser("Lous","Black", (byte) 31);
         userService.saveUser("Mini","Mouse", (byte) 7);
         userService.getAllUsers();
-        userService.cleanUsersTable();
+        userService.removeUserById(7);
         userService.getAllUsers();
-        //userService.dropUsersTable();
+        userService.cleanUsersTable();
+        userService.dropUsersTable();
 
     }
 }
