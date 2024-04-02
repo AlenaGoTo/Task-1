@@ -35,7 +35,7 @@ public class Util {
     public static SessionFactory createSessionFactory () {
         sessionFactory = new Configuration()
                 .addAnnotatedClass(User.class)
-                .buildSessionFactory();
+                .buildSessionFactory(); // По умолчанию будет использован файл hibernate.properties
         return sessionFactory;
     }
 }
